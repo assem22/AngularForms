@@ -1,0 +1,38 @@
+<h1>Task 2</h1>
+<form class="text-center border border-light p-5" #form1="ngForm">
+  <p>form-1 validity is: {{form1.valid}}</p>
+  <form class="text-center border border-light p-5" #form2="ngForm">
+    <label for="form-2">form-2 validity is: {{form2.valid}} </label>
+    <input type="text" id="form-2" name="form-2" ngModel required="required">
+    <form class="text-center border border-light p-5" #form2_1="ngForm">
+      <label for="form-2.1">form-2.1 validity is: {{form2_1.valid}} </label>
+      <input type="text" id="form-2.1" name="form-2.1" required="required" ngModel>
+    </form>
+
+    <form class="text-center border border-light p-5" #form2_2="ngForm">
+      <label for="form-2.2">form-2.2 validity is: {{form2_2.valid}} </label>
+      <input type="text" id="form-2.2" name="form-2.2" required="required" ngModel>
+    </form>
+    <button>Toggle Reactive form</button>
+
+    <form class="text-center border border-light p-5" #form3="ngForm">
+      <h4>Reactive form</h4>
+      <label for="form-3">form-3 validity is: {{form3.valid}} </label>
+      <input type="text" id="form-3" name="form-3" ngModel required="required">
+      <form class="text-center border border-light p-5" #form3_1="ngForm">
+        <label for="form-3.1">form-3.1 validity is: {{form3_1.valid}} </label>
+        <input type="text" id="form-3.1" name="form-3.1" required="required" ngModel>
+      </form>
+    </form>
+
+    <form class="text-center border border-light p-5" #form4="ngForm">
+      <h4>Isolated form</h4>
+      <label for="form-4">form-4 validity is: {{form4.valid}} </label>
+      <input type="text" id="form-4" name="form-4" required="required" ngModel>
+      <form class="text-center border border-light p-5" #form4_1="ngForm">
+        <label for="form-4.1">form-4.1 validity is: {{form4_1.valid}} </label>
+        <input type="text" id="form-4.1" name="form-4.1" required="required" ngModel>
+      </form>
+    </form>
+  </form>
+</form>
